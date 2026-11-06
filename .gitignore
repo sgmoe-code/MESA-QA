@@ -1,0 +1,28 @@
+# Datasets, local models and generated artifacts
+data/
+models/
+outputs/
+evidence/
+cache/
+external/
+
+# Runtime and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.token
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.gguf
+*.incomplete
+*.tmp
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/

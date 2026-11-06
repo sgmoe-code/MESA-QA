@@ -1,0 +1,28 @@
+{
+  "method": "Frozen NuScenes-QA development protocol",
+  "cohort": {
+    "qa_count": 1000,
+    "scene_count": 20,
+    "sample_count": 581
+  },
+  "model_id": "Qwen/Qwen3.5-9B",
+  "model_revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "results": {
+    "Direct": "396/1000",
+    "Structured P2": "311/1000",
+    "P2 + Simple Selector": "428/1000"
+  },
+  "fold_manifest": "outputs/simple_reasoner_selection/scene_oof_split_manifest.json",
+  "frozen_input_manifest_sha256": "f93935351f432dae94bbb89ccff85d7b8e9ee139ce95fd40048e6314ef54623d",
+  "frozen_inputs": {
+    "outputs/rase_phase3_constraint_resolution/paired_evaluation.csv": "2bb544493ab41db09949e2c2718932a4fec720b273a9064bad310938d5785c8d",
+    "outputs/simple_reasoner_selection/per_case_predictions.jsonl": "24a3869e8d4a5d3c3e5b34d2466bcf0909ff2e66c7cfd85bd410d6c0139fe4d0",
+    "outputs/simple_reasoner_selection/scene_oof_split_manifest.json": "eb6ef4ff9bf6a5e2db2af37a1ac3873fea9408a05b8ec8d9a3aba55881623d5f",
+    "outputs/train20_qwen35_direct_final/label_joined_predictions.jsonl": "b39bbad70c6d262c05e7cb5c560f89312d0403082bcfa1e025756792215935ad",
+    "outputs/train20_qwen35_structured_final/label_joined_predictions.jsonl": "f9b9dc2f6ef966bccdd094316697f8602dd5c0f1c42d20a7b10fe162e83797b8",
+    "outputs/train20_qwen35_structured_final/sealed_predictions.jsonl": "2cd12deb0639f1e2adc67f1f6132074db3457d17eff9c282549421a609a229f9"
+  },
+  "selector_oof_prediction_sha256": "728218fe0cda136a29ae8881ac8a86e654229f3e0cc319a5b531c04f8a20c257",
+  "p2_candidate_sha256": "915aa91e0666db755e17749f6f66398a8568516e88fb8d2e873cea82ba20503b",
+  "note": "Retrospective development evaluation; not blinded generalization. Five OOF models are not a production model."
+}

@@ -1,0 +1,25 @@
+{
+  "frozen_model": {
+    "id": "Qwen/Qwen3.5-9B",
+    "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "config_sha256": "d0883072e01861ed0b2d47be3c16c36a8e81c224c7ffaa310c6558fb3f932b05"
+  },
+  "inference_environment": {
+    "python": "3.12.3",
+    "torch": "2.8.0+cu128",
+    "transformers": "5.9.0",
+    "huggingface_hub": "1.17.0",
+    "accelerate": "1.13.0",
+    "cuda": "12.8",
+    "dtype": "bfloat16",
+    "attention": "sdpa"
+  },
+  "cpu_replay_environment": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "scikit_learn": "1.8.0",
+    "nuscenes_devkit": "1.2.0"
+  },
+  "devices_used_for_release_validation": "CPU only",
+  "installation_or_download_during_release": false
+}

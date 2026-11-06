@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "note": "All paths are relative to a locally provisioned authorized artifact root; no dataset, model, prediction, evidence or large cache is included in this repository.",
+  "artifacts": [
+    {
+      "name": "Qwen3.5-9B checkpoint",
+      "purpose": "Frozen Direct/Structured Planner inference",
+      "relative_destination": "models/Qwen3.5-9B/",
+      "source": "Hugging Face model Qwen/Qwen3.5-9B at revision c202236235762e1c871ad0ccb60c8ee5ba337b9a; obtain under the model license using an approved cache.",
+      "known_sha256": {
+        "config.json": "d0883072e01861ed0b2d47be3c16c36a8e81c224c7ffaa310c6558fb3f932b05"
+      }
+    },
+    {
+      "name": "NuScenes v1.0 trainval raw data",
+      "purpose": "Perception/evidence and evaluation inputs",
+      "relative_destination": "data/nuscenes/v1.0-trainval/",
+      "source": "Acquire directly from the official nuScenes download portal under its terms; no data is included.",
+      "known_sha256": null
+    },
+    {
+      "name": "NuScenes-QA question annotations",
+      "purpose": "Frozen Train-20 cohort, Direct and Structured inference",
+      "relative_destination": "data/questions/",
+      "source": "Use the authorized NuScenes-QA release and preserve its license/attribution; no annotations are included.",
+      "known_sha256": null
+    },
+    {
+      "name": "CenterPoint/BEVFusion features and normalized Evidence State",
+      "purpose": "Frozen perception evidence for the NuScenes-QA adapter",
+      "relative_destination": "data/features/CenterPoint/ and outputs/phase5_bevfusion_train20_evidence/normalized/",
+      "source": "Use locally retained authorized research artifacts or reproduce from licensed data and the frozen perception pipeline; this repository does not ship features or BEVFusion weights.",
+      "known_sha256": {
+        "normalized_train20_evidence_manifest": "002385acf1b5b468e74a55d070d241c07eb9c923b523b597929ded1380d4503e"
+      }
+    },
+    {
+      "name": "Frozen candidate, P2, selector and fold artifacts",
+      "purpose": "Cached CPU regression and exact result reproduction",
+      "relative_destination": "outputs/train20_qwen35_direct_final/, outputs/train20_qwen35_structured_final/, outputs/p2_restoration_fivefold/, outputs/simple_reasoner_selection/, outputs/rase_phase3_constraint_resolution/",
+      "source": "Provide from the access-controlled research artifact store; do not regenerate and substitute for frozen inputs. Full prediction data is intentionally excluded.",
+      "known_sha256": {
+        "p2_candidates": "915aa91e0666db755e17749f6f66398a8568516e88fb8d2e873cea82ba20503b",
+        "selector_oof_predictions": "728218fe0cda136a29ae8881ac8a86e654229f3e0cc319a5b531c04f8a20c257",
+        "scene_fold_manifest": "eb6ef4ff9bf6a5e2db2af37a1ac3873fea9408a05b8ec8d9a3aba55881623d5f"
+      }
+    }
+  ]
+}

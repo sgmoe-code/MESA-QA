@@ -1,0 +1,38 @@
+{
+  "project": "MESA-QA",
+  "cohort": {
+    "qa_count": 1000,
+    "scene_count": 20,
+    "sample_count": 581
+  },
+  "model": {
+    "id": "Qwen/Qwen3.5-9B",
+    "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a"
+  },
+  "results": {
+    "direct": {
+      "correct": 396,
+      "total": 1000,
+      "accuracy": 0.396
+    },
+    "structured_p2": {
+      "correct": 311,
+      "total": 1000,
+      "accuracy": 0.311
+    },
+    "p2_post_selection": {
+      "correct": 428,
+      "total": 1000,
+      "accuracy": 0.428
+    }
+  },
+  "frozen_hashes": {
+    "p2_candidates": "915aa91e0666db755e17749f6f66398a8568516e88fb8d2e873cea82ba20503b",
+    "selector_oof_predictions": "728218fe0cda136a29ae8881ac8a86e654229f3e0cc319a5b531c04f8a20c257",
+    "scene_fold_manifest": "eb6ef4ff9bf6a5e2db2af37a1ac3873fea9408a05b8ec8d9a3aba55881623d5f",
+    "direct_label_joined_predictions": "b39bbad70c6d262c05e7cb5c560f89312d0403082bcfa1e025756792215935ad",
+    "structured_label_joined_predictions": "f9b9dc2f6ef966bccdd094316697f8602dd5c0f1c42d20a7b10fe162e83797b8",
+    "structured_sealed_predictions": "2cd12deb0639f1e2adc67f1f6132074db3457d17eff9c282549421a609a229f9"
+  },
+  "evaluation_note": "Retrospective development evaluation; not independent external validation."
+}

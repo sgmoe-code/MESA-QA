@@ -1,0 +1,10 @@
+# Frozen Qwen3.5-9B inference environment (CUDA wheel must match local driver/runtime).
+torch==2.8.0+cu128
+transformers==5.9.0
+accelerate==1.13.0
+huggingface-hub==1.17.0
+numpy==2.2.6
+scipy==1.15.3
+scikit-learn==1.8.0
+Pillow==11.3.0
+nuscenes-devkit==1.2.0
